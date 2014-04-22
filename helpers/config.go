@@ -47,10 +47,10 @@ func LoadConfig() Config {
 
 func loadConfigJsonFromPath() *Config {
 	var config *Config = &Config{
-		PersistentAppHost:      "CATS-persistent-app",
-		PersistentAppSpace:     "CATS-persistent-space",
-		PersistentAppOrg:       "CATS-persistent-org",
-		PersistentAppQuotaName: "CATS-persistent-quota",
+		PersistentAppHost:      "cats-persistent-app",
+		PersistentAppSpace:     "cats-persistent-space",
+		PersistentAppOrg:       "cats-persistent-org",
+		PersistentAppQuotaName: "cats-persistent-quota",
 
 		ArtifactsDirectory: filepath.Join("..", "results"),
 	}

@@ -45,12 +45,12 @@ func NewContext(config Config) *ConfiguredContext {
 	return &ConfiguredContext{
 		config: config,
 
-		quotaDefinitionName: fmt.Sprintf("CATS-QUOTA-%d-%s", node, timeTag),
+		quotaDefinitionName: fmt.Sprintf("cats-quota-%d-%s", node, timeTag),
 
-		organizationName: fmt.Sprintf("CATS-ORG-%d-%s", node, timeTag),
-		spaceName:        fmt.Sprintf("CATS-SPACE-%d-%s", node, timeTag),
+		organizationName: fmt.Sprintf("cats-org-%d-%s", node, timeTag),
+		spaceName:        fmt.Sprintf("cats-space-%d-%s", node, timeTag),
 
-		regularUserUsername: fmt.Sprintf("CATS-USER-%d-%s", node, timeTag),
+		regularUserUsername: fmt.Sprintf("cats-user-%d-%s", node, timeTag),
 		regularUserPassword: "meow",
 
 		isPersistent: false,
